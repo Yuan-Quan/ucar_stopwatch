@@ -1,0 +1,7 @@
+<launch>
+    <arg name="use_sim_time" default="true" />
+    <node name="ucar_stopwatch_node" pkg="ucar_stopwatch" type="ucar_stopwatch_node.py" output="screen">
+        <param name="package_path" value="$(find ucar_stopwatch)" />
+        <rosparam file="$(find ucar_stopwatch)/config/ucar_stopwatch.yaml" command="load" />
+    </node>
+</launch>

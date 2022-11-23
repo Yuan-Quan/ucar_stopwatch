@@ -1,0 +1,126 @@
+
+#ros_status {
+    content-align: left middle;
+    width: 80;
+    height: 7;
+    margin: 2;
+    padding-left: 2;
+    border: white ascii;
+}
+
+#panel_1 {
+    layout: horizontal;
+    background: $boost;
+    margin: 2;
+    height: 5;
+    padding: 0;
+    width: 80
+}
+
+#time_display {
+    dock: left;
+    padding: 0;
+    margin-left: 2
+}
+
+#start_reset_panel {
+    layout: horizontal;
+    dock: right;
+    content-align: right middle;
+    padding: 1;
+}
+
+RosTimeDisplay {
+    height: 1;
+    margin: 1;
+}
+
+WallTimeDisplay {
+    height: 1;
+    margin: 1;
+}
+
+Button {
+    width: 10;
+    height: 1;
+}
+
+#start {
+    dock: right;
+    margin-right: 20;
+}
+
+#stop {
+    dock: right;
+    margin-right: 20;
+    display: none;
+}
+
+#reset {
+    dock: right;
+    margin-right: 2;
+}
+
+.started #start {
+    display: none
+}
+
+.started #stop {
+    display: block
+}
+
+
+#config_panel {
+    layout: horizontal;
+    width: 80;
+    height: 8;
+    margin-left: 2;
+}
+
+#config_left {
+    dock: left;
+    content-align: left middle;
+}
+
+#config_right {
+    dock: right;
+    content-align: right middle;
+    margin-left: 47;
+    margin-top: 2;
+}
+
+#md5sum {
+    width: 28;
+}
+
+#dump {
+    width: 28;
+}
+
+.configure {
+    height: auto;
+    width: auto;
+}
+
+Checkbox {
+    height: auto;
+    width: auto;
+}
+
+
+.config_title {
+    height: 2;
+}
+
+.label {
+    height: 3;
+    content-align: center middle;
+    width: auto;
+}
+
+LogDisplay {
+    margin: 2;
+    height: 15;
+    width: 80;
+    background: $boost;
+}
