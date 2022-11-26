@@ -18,16 +18,18 @@
 }
 
 #time_display {
-    dock: left;
     padding: 0;
-    margin-left: 2
+    dock: left;
+    margin-left: 2;
+    height: 5
 }
 
 #start_reset_panel {
     layout: horizontal;
     dock: right;
-    content-align: right middle;
-    padding: 1;
+    width: 40;
+    margin-left: 0;
+    margin-top: 1;
 }
 
 RosTimeDisplay {

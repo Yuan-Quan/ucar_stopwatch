@@ -241,7 +241,7 @@ class RosStatus(Static):
     def watch_robot_vel(self, vel: float) -> None:
         self.update(
             f"[bold]ROS Status:[/] \n    active parkpoint: {self.park_point_str} \n    robot velocity: [yellow]{self.robot_vel:.2f}[/] m/s")
-        if self.park_stat >= 1 and self.park_stat <= 3 and self.robot_vel < 0.0005:
+        if self.park_stat >= 1 and self.park_stat <= 3 and self.robot_vel < 0.01:
             self.emit_no_wait(self.Parked(self, self.park_stat))
 
 
